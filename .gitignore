@@ -1,0 +1,21 @@
+# Файлы окружения
+.env
+.env.prod
+.env.dev
+
+# Виртуальное окружение Python
+venv/
+.venv/
+
+# Кэш Python
+__pycache__/
+*.py[cod]
+
+# Логи
+*.log
+logs/
+
+# Системные файлы
+.DS_Store
+.idea/
+.vscode/
