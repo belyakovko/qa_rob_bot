@@ -6,6 +6,7 @@ from aiogram.client.default import DefaultBotProperties
 from aiogram.fsm.storage.memory import MemoryStorage
 from config import Config
 from handlers import CommandRouter
+from aiohttp import web  # <-- Добавлено
 
 logging.basicConfig(
     level=logging.INFO,
@@ -26,6 +27,18 @@ async def close_bot_session(bot: Bot):
     except Exception as e:
         logger.warning(f"Ошибка при закрытии сессии: {e}")
 
+async def health_check(request: web.Request):
+    """Эндпоинт для проверки работоспособности (UptimeRobot)"""
+    return web.Response(text="OK")
+
+async def start_http_server(app: web.Application):
+    """Запуск HTTP-сервера"""
+    runner = web.AppRunner(app)
+    await runner.setup()
+    site = web.TCPSite(runner, '0.0.0.0', 8000)
+    await site.start()
+    logger.info("HTTP-сервер запущен на порту 8000")
+
 async def main():
     bot = None
     try:
@@ -38,8 +51,13 @@ async def main():
         router = CommandRouter(dp)
         router.register_handlers()
 
-        # Пропуск накопившихся сообщений (альтернатива skip_updates)
+        # Пропуск накопившихся сообщений
         await bot.delete_webhook(drop_pending_updates=True)
+
+        # Создание и запуск HTTP-сервера
+        app = web.Application()
+        app.router.add_get('/health', health_check)
+        asyncio.create_task(start_http_server(app))  # <-- Запуск в фоне
 
         logger.info("=== Запуск бота ===")
         await dp.start_polling(
