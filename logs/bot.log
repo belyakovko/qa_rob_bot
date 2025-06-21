@@ -1,0 +1,145 @@
+2025-06-18 11:37:31,238 - aiogram.dispatcher - INFO - Start polling
+2025-06-18 11:37:31,501 - aiogram.dispatcher - INFO - Run polling for bot @ToolsQABot id=7765564183 - 'qa_tools_bot'
+2025-06-18 11:37:54,212 - aiogram.event - INFO - Update id=977030874 is not handled. Duration 0 ms by bot id=7765564183
+2025-06-18 11:38:00,842 - aiogram.event - INFO - Update id=977030875 is handled. Duration 344 ms by bot id=7765564183
+2025-06-18 11:38:15,331 - aiogram.event - INFO - Update id=977030876 is not handled. Duration 0 ms by bot id=7765564183
+2025-06-18 11:38:20,035 - aiogram.event - INFO - Update id=977030877 is not handled. Duration 0 ms by bot id=7765564183
+2025-06-18 11:38:21,947 - aiogram.event - INFO - Update id=977030878 is not handled. Duration 0 ms by bot id=7765564183
+2025-06-18 11:41:04,943 - aiogram.dispatcher - INFO - Polling stopped for bot @ToolsQABot id=7765564183 - 'qa_tools_bot'
+2025-06-18 11:41:04,943 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-18 11:49:55,528 - root - ERROR - Ошибка: 'Dispatcher' object has no attribute 'register_message_handler'
+Traceback (most recent call last):
+  File "c:\projects\Python\qa_helper_bot\main.py", line 49, in <module>
+    asyncio.run(main())
+  File "C:\Users\Кирилл\AppData\Local\Programs\Python\Python310\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\Кирилл\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 641, in run_until_complete
+    return future.result()
+  File "c:\projects\Python\qa_helper_bot\main.py", line 40, in main
+    handlers.register_handlers(dp)
+  File "c:\projects\Python\qa_helper_bot\handlers.py", line 8, in register_handlers
+    dp.register_message_handler(generate_image_command, commands=['genimage'])
+AttributeError: 'Dispatcher' object has no attribute 'register_message_handler'
+2025-06-18 11:53:55,924 - aiogram.dispatcher - INFO - Start polling
+2025-06-18 11:53:56,205 - aiogram.dispatcher - INFO - Run polling for bot @ToolsQABot id=7765564183 - 'qa_tools_bot'
+2025-06-18 11:54:13,454 - aiogram.event - INFO - Update id=977030879 is handled. Duration 250 ms by bot id=7765564183
+2025-06-18 11:54:20,425 - aiogram.event - INFO - Update id=977030880 is handled. Duration 109 ms by bot id=7765564183
+2025-06-18 11:54:25,782 - aiogram.event - INFO - Update id=977030881 is handled. Duration 140 ms by bot id=7765564183
+2025-06-18 11:54:27,173 - aiogram.event - INFO - Update id=977030882 is handled. Duration 109 ms by bot id=7765564183
+2025-06-18 11:54:34,765 - root - ERROR - Error generating image: 'ImageDraw' object has no attribute 'textsize'
+2025-06-18 11:54:34,863 - aiogram.event - INFO - Update id=977030883 is handled. Duration 139 ms by bot id=7765564183
+2025-06-18 11:54:41,356 - aiogram.event - INFO - Update id=977030884 is handled. Duration 108 ms by bot id=7765564183
+2025-06-18 11:54:51,985 - root - ERROR - Error in pairwise testing: Telegram server says Bad Request: invalid file HTTP URL specified: Disallowed character in URL host
+Traceback (most recent call last):
+  File "c:\projects\Python\qa_helper_bot\plugins\pairwise_tester.py", line 112, in process_pairwise_parameters
+    await message.answer_document(
+  File "C:\projects\Python\env\lib\site-packages\aiogram\methods\base.py", line 89, in emit
+    return await bot(self)
+  File "C:\projects\Python\env\lib\site-packages\aiogram\client\bot.py", line 374, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "C:\projects\Python\env\lib\site-packages\aiogram\client\session\base.py", line 194, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "C:\projects\Python\env\lib\site-packages\aiogram\client\session\aiohttp.py", line 161, in make_request
+    response = self.check_response(method=method, status_code=resp.status, content=raw_result)
+  File "C:\projects\Python\env\lib\site-packages\aiogram\client\session\base.py", line 111, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says Bad Request: invalid file HTTP URL specified: Disallowed character in URL host
+2025-06-18 11:54:52,176 - aiogram.event - INFO - Update id=977030885 is handled. Duration 452 ms by bot id=7765564183
+2025-06-18 11:56:36,438 - aiogram.dispatcher - INFO - Polling stopped for bot @ToolsQABot id=7765564183 - 'qa_tools_bot'
+2025-06-18 11:56:36,438 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-18 11:56:36,438 - root - INFO - Бот остановлен пользователем
+2025-06-18 11:56:43,674 - aiogram.dispatcher - INFO - Start polling
+2025-06-18 11:56:43,908 - aiogram.dispatcher - INFO - Run polling for bot @ToolsQABot id=7765564183 - 'qa_tools_bot'
+2025-06-18 11:56:53,943 - aiogram.event - INFO - Update id=977030886 is handled. Duration 233 ms by bot id=7765564183
+2025-06-18 11:56:56,205 - aiogram.event - INFO - Update id=977030887 is handled. Duration 94 ms by bot id=7765564183
+2025-06-18 11:57:05,652 - root - ERROR - Error generating image: 'JPG'
+2025-06-18 11:57:05,758 - aiogram.event - INFO - Update id=977030888 is handled. Duration 530 ms by bot id=7765564183
+2025-06-18 11:57:49,405 - aiogram.dispatcher - INFO - Polling stopped for bot @ToolsQABot id=7765564183 - 'qa_tools_bot'
+2025-06-18 11:57:49,405 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-18 11:57:49,405 - root - INFO - Бот остановлен пользователем
+2025-06-18 12:03:12,314 - aiogram.dispatcher - INFO - Start polling
+2025-06-18 12:03:12,579 - aiogram.dispatcher - INFO - Run polling for bot @ToolsQABot id=7765564183 - 'qa_tools_bot'
+2025-06-18 12:03:22,319 - aiogram.event - INFO - Update id=977030889 is handled. Duration 328 ms by bot id=7765564183
+2025-06-18 12:03:24,642 - aiogram.event - INFO - Update id=977030890 is handled. Duration 109 ms by bot id=7765564183
+2025-06-18 12:03:32,684 - aiogram.event - INFO - Update id=977030891 is handled. Duration 171 ms by bot id=7765564183
+2025-06-18 12:04:08,352 - aiogram.event - INFO - Update id=977030892 is not handled. Duration 0 ms by bot id=7765564183
+2025-06-18 12:04:08,353 - aiogram.event - ERROR - Cause exception while process update id=977030892 by bot id=7765564183
+AttributeError: 'ReplyKeyboardRemove' object has no attribute 'add'
+Traceback (most recent call last):
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "C:\projects\Python\env\lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "c:\projects\Python\qa_helper_bot\plugins\payment_generator.py", line 16, in generate_payment_command
+    markup.add(KeyboardButton(text=system))
+  File "C:\projects\Python\env\lib\site-packages\pydantic\main.py", line 991, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'ReplyKeyboardRemove' object has no attribute 'add'
+2025-06-18 12:04:12,187 - aiogram.event - INFO - Update id=977030893 is handled. Duration 108 ms by bot id=7765564183
+2025-06-18 12:05:45,124 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-18 12:05:45,141 - aiogram.dispatcher - INFO - Polling stopped for bot @ToolsQABot id=7765564183 - 'qa_tools_bot'
+2025-06-18 12:05:45,400 - root - INFO - Бот остановлен пользователем
+2025-06-18 12:05:54,632 - aiogram.dispatcher - INFO - Start polling
+2025-06-18 12:05:54,892 - aiogram.dispatcher - INFO - Run polling for bot @ToolsQABot id=7765564183 - 'qa_tools_bot'
+2025-06-18 12:06:04,285 - aiogram.event - INFO - Update id=977030894 is handled. Duration 250 ms by bot id=7765564183
+2025-06-18 12:06:11,015 - aiogram.event - INFO - Update id=977030895 is handled. Duration 296 ms by bot id=7765564183
+2025-06-18 12:06:24,285 - aiogram.event - INFO - Update id=977030896 is not handled. Duration 0 ms by bot id=7765564183
+2025-06-18 12:07:03,641 - aiogram.event - INFO - Update id=977030897 is not handled. Duration 0 ms by bot id=7765564183
+2025-06-18 12:07:29,322 - aiogram.event - INFO - Update id=977030898 is not handled. Duration 0 ms by bot id=7765564183
+2025-06-18 12:07:34,672 - aiogram.event - INFO - Update id=977030899 is handled. Duration 109 ms by bot id=7765564183
+2025-06-18 12:07:43,992 - aiogram.event - INFO - Update id=977030900 is handled. Duration 421 ms by bot id=7765564183
+2025-06-18 12:08:00,209 - aiogram.event - INFO - Update id=977030901 is not handled. Duration 0 ms by bot id=7765564183
+2025-06-18 12:09:03,627 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [WinError 1236] Подключение к сети было разорвано локальной системой
+2025-06-18 12:09:03,659 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7765564183)
+2025-06-18 12:09:14,945 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 7765564183)
+2025-06-18 13:35:33,252 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-18 13:35:33,811 - aiogram.dispatcher - INFO - Polling stopped for bot @ToolsQABot id=7765564183 - 'qa_tools_bot'
+2025-06-18 13:35:34,344 - root - INFO - Бот остановлен пользователем
+2025-06-18 13:41:06,276 - aiogram.dispatcher - INFO - Start polling
+2025-06-18 13:41:06,512 - aiogram.dispatcher - INFO - Run polling for bot @ToolsQABot id=7765564183 - 'qa_tools_bot'
+2025-06-18 13:41:19,160 - aiogram.event - INFO - Update id=977030902 is handled. Duration 234 ms by bot id=7765564183
+2025-06-18 13:41:22,043 - aiogram.event - INFO - Update id=977030903 is handled. Duration 94 ms by bot id=7765564183
+2025-06-18 13:41:24,803 - aiogram.event - INFO - Update id=977030904 is handled. Duration 93 ms by bot id=7765564183
+2025-06-18 13:41:37,232 - aiogram.event - INFO - Update id=977030905 is handled. Duration 296 ms by bot id=7765564183
+2025-06-18 13:41:54,497 - aiogram.event - INFO - Update id=977030906 is not handled. Duration 16 ms by bot id=7765564183
+2025-06-18 13:43:03,839 - aiogram.dispatcher - INFO - Polling stopped for bot @ToolsQABot id=7765564183 - 'qa_tools_bot'
+2025-06-18 13:43:03,839 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-18 13:43:04,084 - root - INFO - Бот остановлен пользователем
+2025-06-18 13:43:18,954 - aiogram.dispatcher - INFO - Start polling
+2025-06-18 13:43:19,216 - aiogram.dispatcher - INFO - Run polling for bot @ToolsQABot id=7765564183 - 'qa_tools_bot'
+2025-06-18 13:43:28,243 - aiogram.event - INFO - Update id=977030907 is handled. Duration 233 ms by bot id=7765564183
+2025-06-18 13:43:34,242 - aiogram.event - INFO - Update id=977030908 is handled. Duration 187 ms by bot id=7765564183
+2025-06-18 13:43:44,244 - aiogram.event - INFO - Update id=977030909 is not handled. Duration 0 ms by bot id=7765564183
+2025-06-18 13:51:05,598 - aiogram.dispatcher - INFO - Polling stopped for bot @ToolsQABot id=7765564183 - 'qa_tools_bot'
+2025-06-18 13:51:05,598 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-18 13:51:05,861 - root - INFO - Бот остановлен пользователем
+2025-06-18 19:37:43,874 - aiogram.dispatcher - INFO - Start polling
+2025-06-18 19:37:44,197 - aiogram.dispatcher - INFO - Run polling for bot @ToolsQABot id=7765564183 - 'qa_tools_bot'
+2025-06-18 19:38:03,834 - aiogram.event - INFO - Update id=977030910 is handled. Duration 250 ms by bot id=7765564183
+2025-06-18 19:38:14,647 - aiogram.event - INFO - Update id=977030911 is handled. Duration 328 ms by bot id=7765564183
+2025-06-18 19:38:19,085 - aiogram.event - INFO - Update id=977030912 is not handled. Duration 0 ms by bot id=7765564183
+2025-06-18 19:39:12,295 - aiogram.dispatcher - INFO - Polling stopped for bot @ToolsQABot id=7765564183 - 'qa_tools_bot'
+2025-06-18 19:39:12,295 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-18 19:39:12,550 - root - INFO - Бот остановлен пользователем
