@@ -18,10 +18,10 @@ logging.basicConfig(
 
 logger = logging.getLogger(__name__)
 
-async def close_previous_sessions(bot: Bot):
-    """Корректное закрытие предыдущих сессий"""
+async def close_bot_session(bot: Bot):
+    """Корректное закрытие сессии бота"""
     try:
-        if bot.session and not bot.session.closed:
+        if hasattr(bot, 'session'):
             await bot.session.close()
     except Exception as e:
         logger.warning(f"Ошибка при закрытии сессии: {e}")
@@ -29,16 +29,17 @@ async def close_previous_sessions(bot: Bot):
 async def main():
     bot = None
     try:
-        # Инициализация бота с закрытием предыдущих сессий
+        # Инициализация бота
         bot = Bot(token=Config.BOT_TOKEN, default=DefaultBotProperties(parse_mode="HTML"))
-        await close_previous_sessions(bot)
-        
         dp = Dispatcher(storage=MemoryStorage())
+        
+        # Регистрация обработчиков
+        logger.info("=== Инициализация бота ===")
         router = CommandRouter(dp)
         router.register_handlers()
 
-        logger.info("=== Инициализация бота ===")
-        await dp.skip_updates()  # Пропускаем накопившиеся сообщения
+        # Пропуск накопившихся сообщений (альтернатива skip_updates)
+        await bot.delete_webhook(drop_pending_updates=True)
 
         logger.info("=== Запуск бота ===")
         await dp.start_polling(
@@ -57,7 +58,7 @@ async def main():
     finally:
         logger.info("Завершение работы бота...")
         if bot:
-            await close_previous_sessions(bot)
+            await close_bot_session(bot)
         logger.info("Бот остановлен")
 
 def run_bot():
