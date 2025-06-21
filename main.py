@@ -18,40 +18,35 @@ logging.basicConfig(
 
 logger = logging.getLogger(__name__)
 
-async def close_previous_sessions():
-    """Закрывает все предыдущие сессии бота"""
-    bot = Bot(token=Config.BOT_TOKEN, default=DefaultBotProperties(parse_mode="HTML"))
+async def close_previous_sessions(bot: Bot):
+    """Корректное закрытие предыдущих сессий"""
     try:
-        await bot.session.close()
+        if bot.session and not bot.session.closed:
+            await bot.session.close()
     except Exception as e:
-        logger.warning(f"Ошибка при закрытии сессий: {e}")
-    finally:
-        await (await bot.get_session()).close()
+        logger.warning(f"Ошибка при закрытии сессии: {e}")
 
 async def main():
+    bot = None
     try:
-        # Закрываем предыдущие сессии перед запуском
-        await close_previous_sessions()
-
-        bot = Bot(
-            token=Config.BOT_TOKEN,
-            default=DefaultBotProperties(parse_mode="HTML")
-        )
+        # Инициализация бота с закрытием предыдущих сессий
+        bot = Bot(token=Config.BOT_TOKEN, default=DefaultBotProperties(parse_mode="HTML"))
+        await close_previous_sessions(bot)
+        
         dp = Dispatcher(storage=MemoryStorage())
-
-        logger.info("=== Инициализация бота ===")
         router = CommandRouter(dp)
         router.register_handlers()
 
-        logger.info("=== Запуск бота ===")
+        logger.info("=== Инициализация бота ===")
         await dp.skip_updates()  # Пропускаем накопившиеся сообщения
-        
+
+        logger.info("=== Запуск бота ===")
         await dp.start_polling(
             bot,
             allowed_updates=dp.resolve_used_update_types(),
-            close_bot_session=True,  # Закрываем сессию при завершении
-            timeout=30,  # Увеличиваем таймаут
-            relax=0.1    # Задержка между запросами
+            close_bot_session=True,
+            timeout=30,
+            relax=0.1
         )
         
     except asyncio.CancelledError:
@@ -61,8 +56,8 @@ async def main():
         raise
     finally:
         logger.info("Завершение работы бота...")
-        if 'bot' in locals():
-            await bot.session.close()
+        if bot:
+            await close_previous_sessions(bot)
         logger.info("Бот остановлен")
 
 def run_bot():
