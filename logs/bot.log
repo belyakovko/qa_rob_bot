@@ -143,3 +143,242 @@ AttributeError: 'ReplyKeyboardRemove' object has no attribute 'add'
 2025-06-18 19:39:12,295 - aiogram.dispatcher - INFO - Polling stopped for bot @ToolsQABot id=7765564183 - 'qa_tools_bot'
 2025-06-18 19:39:12,295 - aiogram.dispatcher - INFO - Polling stopped
 2025-06-18 19:39:12,550 - root - INFO - Р‘РѕС‚ РѕСЃС‚Р°РЅРѕРІР»РµРЅ РїРѕР»СЊР·РѕРІР°С‚РµР»РµРј
+2025-06-21 22:28:58,813 - __main__ - INFO - === Инициализация бота ===
+2025-06-21 22:28:58,813 - handlers - INFO - Регистрация обработчиков команд...
+2025-06-21 22:28:58,822 - handlers - INFO - Все обработчики успешно зарегистрированы
+2025-06-21 22:28:59,382 - __main__ - INFO - === Запуск бота ===
+2025-06-21 22:28:59,383 - aiogram.dispatcher - INFO - Start polling
+2025-06-21 22:28:59,385 - __main__ - INFO - HTTP-сервер запущен на порту 8000
+2025-06-21 22:28:59,458 - aiogram.dispatcher - INFO - Run polling for bot @ToolsQABot id=7765564183 - 'qa_rob_bot_dev'
+2025-06-21 22:29:29,688 - __main__ - INFO - Приложение остановлено пользователем
+2025-06-21 22:29:29,688 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-21 22:29:29,938 - __main__ - INFO - Получен сигнал завершения работы
+2025-06-21 22:29:29,938 - __main__ - INFO - Завершение работы бота...
+2025-06-21 22:29:30,932 - __main__ - INFO - Бот остановлен
+2025-06-21 22:29:30,933 - aiogram.dispatcher - INFO - Polling stopped for bot @ToolsQABot id=7765564183 - 'qa_rob_bot_dev'
+2025-06-21 22:29:30,934 - __main__ - INFO - Event loop закрыт
+2025-06-21 23:34:32,839 - __main__ - INFO - === Инициализация бота ===
+2025-06-21 23:34:32,839 - handlers - INFO - Регистрация обработчиков команд...
+2025-06-21 23:34:32,841 - handlers - INFO - Все обработчики успешно зарегистрированы
+2025-06-21 23:34:33,294 - __main__ - INFO - === Запуск бота ===
+2025-06-21 23:34:33,295 - aiogram.dispatcher - INFO - Start polling
+2025-06-21 23:34:33,305 - __main__ - INFO - HTTP-сервер запущен на порту 8000
+2025-06-21 23:34:33,376 - aiogram.dispatcher - INFO - Run polling for bot @ToolsQABot id=7765564183 - 'qa_rob_bot_dev'
+2025-06-21 23:35:17,308 - aiogram.event - INFO - Update id=977031424 is handled. Duration 250 ms by bot id=7765564183
+2025-06-21 23:37:55,909 - aiogram.event - INFO - Update id=977031425 is handled. Duration 531 ms by bot id=7765564183
+2025-06-21 23:37:58,157 - aiogram.event - INFO - Update id=977031426 is handled. Duration 172 ms by bot id=7765564183
+2025-06-21 23:42:40,373 - __main__ - INFO - Приложение остановлено пользователем
+2025-06-21 23:42:40,373 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-21 23:42:40,625 - __main__ - INFO - Получен сигнал завершения работы
+2025-06-21 23:42:40,625 - __main__ - INFO - Завершение работы бота...
+2025-06-21 23:42:41,226 - __main__ - INFO - Бот остановлен
+2025-06-21 23:42:41,227 - aiogram.dispatcher - INFO - Polling stopped for bot @ToolsQABot id=7765564183 - 'qa_rob_bot_dev'
+2025-06-21 23:42:41,228 - __main__ - INFO - Event loop закрыт
+2025-06-21 23:55:47,902 - __main__ - INFO - === Инициализация бота ===
+2025-06-21 23:55:47,902 - handlers - INFO - Регистрация обработчиков команд...
+2025-06-21 23:55:47,902 - handlers - INFO - Все обработчики успешно зарегистрированы
+2025-06-21 23:55:48,432 - __main__ - INFO - === Запуск бота ===
+2025-06-21 23:55:48,433 - aiogram.dispatcher - INFO - Start polling
+2025-06-21 23:55:48,435 - __main__ - INFO - HTTP-сервер запущен на порту 8000
+2025-06-21 23:55:48,511 - aiogram.dispatcher - INFO - Run polling for bot @ToolsQABot id=7765564183 - 'qa_rob_bot_dev'
+2025-06-21 23:56:20,335 - aiogram.event - INFO - Update id=977031427 is handled. Duration 250 ms by bot id=7765564183
+2025-06-21 23:56:26,684 - aiogram.event - INFO - Update id=977031428 is handled. Duration 92 ms by bot id=7765564183
+2025-06-21 23:56:28,197 - aiogram.event - INFO - Update id=977031429 is handled. Duration 219 ms by bot id=7765564183
+2025-06-21 23:56:38,957 - aiogram.event - INFO - Update id=977031430 is handled. Duration 0 ms by bot id=7765564183
+2025-06-21 23:56:45,077 - aiogram.event - INFO - Update id=977031431 is handled. Duration 0 ms by bot id=7765564183
+2025-06-21 23:57:20,635 - __main__ - INFO - Приложение остановлено пользователем
+2025-06-21 23:57:20,635 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-21 23:57:20,886 - __main__ - INFO - Получен сигнал завершения работы
+2025-06-21 23:57:20,886 - __main__ - INFO - Завершение работы бота...
+2025-06-21 23:57:21,817 - __main__ - INFO - Бот остановлен
+2025-06-21 23:57:21,818 - aiogram.dispatcher - INFO - Polling stopped for bot @ToolsQABot id=7765564183 - 'qa_rob_bot_dev'
+2025-06-21 23:57:21,828 - __main__ - INFO - Event loop закрыт
+2025-06-21 23:57:42,019 - __main__ - INFO - === Инициализация бота ===
+2025-06-21 23:57:42,019 - handlers - INFO - Регистрация обработчиков команд...
+2025-06-21 23:57:42,019 - handlers - INFO - Все обработчики успешно зарегистрированы
+2025-06-21 23:57:42,411 - __main__ - INFO - === Запуск бота ===
+2025-06-21 23:57:42,412 - aiogram.dispatcher - INFO - Start polling
+2025-06-21 23:57:42,415 - __main__ - INFO - HTTP-сервер запущен на порту 8000
+2025-06-21 23:57:42,492 - aiogram.dispatcher - INFO - Run polling for bot @ToolsQABot id=7765564183 - 'qa_rob_bot_dev'
+2025-06-22 00:03:01,637 - __main__ - INFO - Приложение остановлено пользователем
+2025-06-22 00:03:01,645 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-22 00:03:01,897 - __main__ - INFO - Получен сигнал завершения работы
+2025-06-22 00:03:01,898 - __main__ - INFO - Завершение работы бота...
+2025-06-22 00:03:02,524 - __main__ - INFO - Бот остановлен
+2025-06-22 00:03:02,526 - aiogram.dispatcher - INFO - Polling stopped for bot @ToolsQABot id=7765564183 - 'qa_rob_bot_dev'
+2025-06-22 00:03:02,528 - __main__ - INFO - Event loop закрыт
+2025-06-22 00:04:25,288 - __main__ - INFO - === Инициализация бота ===
+2025-06-22 00:04:25,288 - handlers - INFO - Регистрация обработчиков команд...
+2025-06-22 00:04:25,288 - handlers - INFO - Все обработчики успешно зарегистрированы
+2025-06-22 00:04:25,686 - __main__ - INFO - === Запуск бота ===
+2025-06-22 00:04:25,687 - aiogram.dispatcher - INFO - Start polling
+2025-06-22 00:04:25,691 - __main__ - INFO - HTTP-сервер запущен на порту 8000
+2025-06-22 00:04:25,758 - aiogram.dispatcher - INFO - Run polling for bot @ToolsQABot id=7765564183 - 'qa_rob_bot_dev'
+2025-06-22 00:05:19,151 - aiogram.event - INFO - Update id=977031432 is handled. Duration 234 ms by bot id=7765564183
+2025-06-22 00:05:20,366 - aiogram.event - INFO - Update id=977031433 is handled. Duration 125 ms by bot id=7765564183
+2025-06-22 00:05:23,323 - aiogram.event - INFO - Update id=977031434 is handled. Duration 250 ms by bot id=7765564183
+2025-06-22 00:05:26,587 - aiogram.event - INFO - Update id=977031435 is handled. Duration 0 ms by bot id=7765564183
+2025-06-22 00:05:30,633 - aiogram.event - INFO - Update id=977031436 is handled. Duration 171 ms by bot id=7765564183
+2025-06-22 00:05:37,398 - aiogram.event - INFO - Update id=977031437 is handled. Duration 140 ms by bot id=7765564183
+2025-06-22 00:05:38,505 - aiogram.event - INFO - Update id=977031438 is handled. Duration 266 ms by bot id=7765564183
+2025-06-22 00:05:39,317 - aiogram.event - INFO - Update id=977031439 is handled. Duration 0 ms by bot id=7765564183
+2025-06-22 00:11:32,488 - __main__ - INFO - Приложение остановлено пользователем
+2025-06-22 00:11:32,488 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-22 00:11:32,758 - __main__ - INFO - Получен сигнал завершения работы
+2025-06-22 00:11:32,758 - __main__ - INFO - Завершение работы бота...
+2025-06-22 00:11:33,256 - __main__ - INFO - Бот остановлен
+2025-06-22 00:11:33,256 - aiogram.dispatcher - INFO - Polling stopped for bot @ToolsQABot id=7765564183 - 'qa_rob_bot_dev'
+2025-06-22 00:11:33,258 - __main__ - INFO - Event loop закрыт
+2025-06-22 00:11:46,709 - __main__ - INFO - === Инициализация бота ===
+2025-06-22 00:11:46,709 - handlers - INFO - Регистрация обработчиков команд...
+2025-06-22 00:11:46,709 - handlers - INFO - Все обработчики успешно зарегистрированы
+2025-06-22 00:11:47,676 - __main__ - INFO - === Запуск бота ===
+2025-06-22 00:11:47,677 - aiogram.dispatcher - INFO - Start polling
+2025-06-22 00:11:47,682 - __main__ - INFO - HTTP-сервер запущен на порту 8000
+2025-06-22 00:11:47,757 - aiogram.dispatcher - INFO - Run polling for bot @ToolsQABot id=7765564183 - 'qa_rob_bot_dev'
+2025-06-22 00:11:54,941 - aiogram.event - INFO - Update id=977031440 is handled. Duration 266 ms by bot id=7765564183
+2025-06-22 00:11:56,800 - aiogram.event - INFO - Update id=977031441 is handled. Duration 140 ms by bot id=7765564183
+2025-06-22 00:11:58,967 - aiogram.event - INFO - Update id=977031442 is handled. Duration 344 ms by bot id=7765564183
+2025-06-22 00:11:59,869 - aiogram.event - INFO - Update id=977031443 is handled. Duration 0 ms by bot id=7765564183
+2025-06-22 00:12:07,811 - aiogram.event - INFO - Update id=977031444 is handled. Duration 92 ms by bot id=7765564183
+2025-06-22 00:12:39,773 - aiogram.event - INFO - Update id=977031445 is handled. Duration 250 ms by bot id=7765564183
+2025-06-22 00:12:50,238 - aiogram.event - INFO - Update id=977031446 is handled. Duration 125 ms by bot id=7765564183
+2025-06-22 00:12:52,018 - aiogram.event - INFO - Update id=977031447 is handled. Duration 359 ms by bot id=7765564183
+2025-06-22 00:12:54,139 - aiogram.event - INFO - Update id=977031448 is handled. Duration 0 ms by bot id=7765564183
+2025-06-22 00:12:58,031 - aiogram.event - INFO - Update id=977031449 is handled. Duration 0 ms by bot id=7765564183
+2025-06-22 00:13:00,322 - aiogram.event - INFO - Update id=977031450 is handled. Duration 0 ms by bot id=7765564183
+2025-06-22 00:13:09,644 - __main__ - INFO - Приложение остановлено пользователем
+2025-06-22 00:13:09,644 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-22 00:13:09,902 - __main__ - INFO - Получен сигнал завершения работы
+2025-06-22 00:13:09,902 - __main__ - INFO - Завершение работы бота...
+2025-06-22 00:13:10,394 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [Errno 1] [SSL: APPLICATION_DATA_AFTER_CLOSE_NOTIFY] application data after close notify (_ssl.c:2660)
+2025-06-22 00:13:10,395 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7765564183)
+2025-06-22 00:13:10,512 - __main__ - INFO - Бот остановлен
+2025-06-22 00:13:10,517 - aiogram.dispatcher - INFO - Polling stopped for bot @ToolsQABot id=7765564183 - 'qa_rob_bot_dev'
+2025-06-22 00:13:10,520 - __main__ - INFO - Event loop закрыт
+2025-06-22 00:40:26,885 - __main__ - INFO - === Инициализация бота ===
+2025-06-22 00:40:26,885 - handlers - INFO - Регистрация обработчиков команд...
+2025-06-22 00:40:26,885 - handlers - INFO - Все обработчики успешно зарегистрированы
+2025-06-22 00:40:27,287 - __main__ - INFO - === Запуск бота ===
+2025-06-22 00:40:27,288 - aiogram.dispatcher - INFO - Start polling
+2025-06-22 00:40:27,290 - __main__ - INFO - HTTP-сервер запущен на порту 8000
+2025-06-22 00:40:27,370 - aiogram.dispatcher - INFO - Run polling for bot @ToolsQABot id=7765564183 - 'qa_rob_bot_dev'
+2025-06-22 00:40:47,211 - aiogram.event - INFO - Update id=977031451 is handled. Duration 297 ms by bot id=7765564183
+2025-06-22 00:40:48,632 - aiogram.event - INFO - Update id=977031452 is handled. Duration 125 ms by bot id=7765564183
+2025-06-22 00:40:49,708 - aiogram.event - INFO - Update id=977031453 is handled. Duration 203 ms by bot id=7765564183
+2025-06-22 00:40:50,582 - aiogram.event - INFO - Update id=977031454 is handled. Duration 0 ms by bot id=7765564183
+2025-06-22 00:40:54,502 - aiogram.event - INFO - Update id=977031455 is handled. Duration 93 ms by bot id=7765564183
+2025-06-22 00:41:03,634 - aiogram.event - INFO - Update id=977031456 is handled. Duration 109 ms by bot id=7765564183
+2025-06-22 00:41:05,095 - aiogram.event - INFO - Update id=977031457 is handled. Duration 235 ms by bot id=7765564183
+2025-06-22 00:41:06,820 - aiogram.event - INFO - Update id=977031458 is handled. Duration 0 ms by bot id=7765564183
+2025-06-22 00:49:31,400 - __main__ - INFO - Приложение остановлено пользователем
+2025-06-22 00:49:31,408 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-22 00:49:31,741 - __main__ - INFO - Получен сигнал завершения работы
+2025-06-22 00:49:31,745 - __main__ - INFO - Завершение работы бота...
+2025-06-22 00:49:32,259 - __main__ - INFO - Бот остановлен
+2025-06-22 00:49:32,262 - aiogram.dispatcher - INFO - Polling stopped for bot @ToolsQABot id=7765564183 - 'qa_rob_bot_dev'
+2025-06-22 00:49:32,268 - __main__ - INFO - Event loop закрыт
+2025-06-22 00:49:43,888 - __main__ - INFO - === Инициализация бота ===
+2025-06-22 00:49:43,888 - handlers - INFO - Регистрация обработчиков команд...
+2025-06-22 00:49:43,888 - handlers - INFO - Все обработчики успешно зарегистрированы
+2025-06-22 00:49:44,446 - __main__ - INFO - === Запуск бота ===
+2025-06-22 00:49:44,446 - aiogram.dispatcher - INFO - Start polling
+2025-06-22 00:49:44,448 - __main__ - INFO - HTTP-сервер запущен на порту 8000
+2025-06-22 00:49:44,523 - aiogram.dispatcher - INFO - Run polling for bot @ToolsQABot id=7765564183 - 'qa_rob_bot_dev'
+2025-06-22 00:49:55,910 - aiogram.event - INFO - Update id=977031459 is handled. Duration 250 ms by bot id=7765564183
+2025-06-22 00:49:57,261 - aiogram.event - INFO - Update id=977031460 is handled. Duration 157 ms by bot id=7765564183
+2025-06-22 00:49:59,003 - aiogram.event - INFO - Update id=977031461 is handled. Duration 157 ms by bot id=7765564183
+2025-06-22 00:50:00,380 - aiogram.event - INFO - Update id=977031462 is handled. Duration 109 ms by bot id=7765564183
+2025-06-22 00:50:01,462 - aiogram.event - INFO - Update id=977031463 is handled. Duration 219 ms by bot id=7765564183
+2025-06-22 00:50:02,564 - aiogram.event - INFO - Update id=977031464 is handled. Duration 328 ms by bot id=7765564183
+2025-06-22 00:50:05,567 - aiogram.event - INFO - Update id=977031465 is handled. Duration 608 ms by bot id=7765564183
+2025-06-22 00:50:11,615 - aiogram.event - INFO - Update id=977031466 is handled. Duration 218 ms by bot id=7765564183
+2025-06-22 00:50:13,215 - aiogram.event - INFO - Update id=977031467 is handled. Duration 187 ms by bot id=7765564183
+2025-06-22 00:50:14,708 - aiogram.event - INFO - Update id=977031468 is handled. Duration 219 ms by bot id=7765564183
+2025-06-22 00:50:20,091 - aiogram.event - INFO - Update id=977031469 is handled. Duration 203 ms by bot id=7765564183
+2025-06-22 00:52:21,303 - __main__ - INFO - Приложение остановлено пользователем
+2025-06-22 00:52:21,303 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-22 00:52:21,579 - __main__ - INFO - Получен сигнал завершения работы
+2025-06-22 00:52:21,579 - __main__ - INFO - Завершение работы бота...
+2025-06-22 00:52:22,080 - __main__ - INFO - Бот остановлен
+2025-06-22 00:52:22,081 - aiogram.dispatcher - INFO - Polling stopped for bot @ToolsQABot id=7765564183 - 'qa_rob_bot_dev'
+2025-06-22 00:52:22,082 - __main__ - INFO - Event loop закрыт
+2025-06-22 00:52:41,109 - __main__ - INFO - === Инициализация бота ===
+2025-06-22 00:52:41,109 - handlers - INFO - Регистрация обработчиков команд...
+2025-06-22 00:52:41,109 - handlers - INFO - Все обработчики успешно зарегистрированы
+2025-06-22 00:52:41,577 - __main__ - INFO - === Запуск бота ===
+2025-06-22 00:52:41,578 - aiogram.dispatcher - INFO - Start polling
+2025-06-22 00:52:41,581 - __main__ - INFO - HTTP-сервер запущен на порту 8000
+2025-06-22 00:52:41,651 - aiogram.dispatcher - INFO - Run polling for bot @ToolsQABot id=7765564183 - 'qa_rob_bot_dev'
+2025-06-22 00:52:51,681 - aiogram.event - INFO - Update id=977031470 is handled. Duration 358 ms by bot id=7765564183
+2025-06-22 00:52:57,608 - aiogram.event - INFO - Update id=977031471 is handled. Duration 125 ms by bot id=7765564183
+2025-06-22 00:52:59,310 - aiogram.event - INFO - Update id=977031472 is handled. Duration 733 ms by bot id=7765564183
+2025-06-22 00:53:02,328 - aiogram.event - INFO - Update id=977031473 is handled. Duration 108 ms by bot id=7765564183
+2025-06-22 00:53:03,705 - aiogram.event - INFO - Update id=977031474 is handled. Duration 187 ms by bot id=7765564183
+2025-06-22 00:53:06,708 - aiogram.event - INFO - Update id=977031475 is handled. Duration 125 ms by bot id=7765564183
+2025-06-22 00:53:07,927 - aiogram.event - INFO - Update id=977031476 is handled. Duration 217 ms by bot id=7765564183
+2025-06-22 00:53:09,712 - aiogram.event - INFO - Update id=977031477 is handled. Duration 125 ms by bot id=7765564183
+2025-06-22 00:53:11,753 - aiogram.event - INFO - Update id=977031478 is handled. Duration 187 ms by bot id=7765564183
+2025-06-22 00:53:13,318 - aiogram.event - INFO - Update id=977031479 is handled. Duration 125 ms by bot id=7765564183
+2025-06-22 00:53:15,047 - aiogram.event - INFO - Update id=977031480 is handled. Duration 187 ms by bot id=7765564183
+2025-06-22 00:53:16,166 - aiogram.event - INFO - Update id=977031481 is handled. Duration 93 ms by bot id=7765564183
+2025-06-22 00:53:17,510 - aiogram.event - INFO - Update id=977031482 is handled. Duration 94 ms by bot id=7765564183
+2025-06-22 00:53:20,320 - aiogram.event - INFO - Update id=977031483 is handled. Duration 203 ms by bot id=7765564183
+2025-06-22 00:53:23,123 - aiogram.event - INFO - Update id=977031484 is handled. Duration 93 ms by bot id=7765564183
+2025-06-22 00:53:25,545 - aiogram.event - INFO - Update id=977031485 is handled. Duration 93 ms by bot id=7765564183
+2025-06-22 00:53:27,751 - aiogram.event - INFO - Update id=977031486 is handled. Duration 93 ms by bot id=7765564183
+2025-06-22 00:53:29,155 - aiogram.event - INFO - Update id=977031487 is handled. Duration 140 ms by bot id=7765564183
+2025-06-22 00:53:30,650 - aiogram.event - INFO - Update id=977031488 is handled. Duration 359 ms by bot id=7765564183
+2025-06-22 00:53:32,454 - aiogram.event - INFO - Update id=977031489 is handled. Duration 141 ms by bot id=7765564183
+2025-06-22 00:53:33,643 - aiogram.event - INFO - Update id=977031490 is handled. Duration 109 ms by bot id=7765564183
+2025-06-22 00:53:35,229 - aiogram.event - INFO - Update id=977031491 is handled. Duration 139 ms by bot id=7765564183
+2025-06-22 00:53:36,139 - aiogram.event - INFO - Update id=977031492 is handled. Duration 94 ms by bot id=7765564183
+2025-06-22 00:53:37,948 - aiogram.event - INFO - Update id=977031493 is handled. Duration 141 ms by bot id=7765564183
+2025-06-22 00:53:39,000 - aiogram.event - INFO - Update id=977031494 is handled. Duration 93 ms by bot id=7765564183
+2025-06-22 00:55:46,119 - aiogram.event - INFO - Update id=977031495 is handled. Duration 218 ms by bot id=7765564183
+2025-06-22 00:56:46,536 - __main__ - INFO - Приложение остановлено пользователем
+2025-06-22 00:56:46,536 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-22 00:56:46,798 - __main__ - INFO - Получен сигнал завершения работы
+2025-06-22 00:56:46,798 - __main__ - INFO - Завершение работы бота...
+2025-06-22 00:56:47,316 - __main__ - INFO - Бот остановлен
+2025-06-22 00:56:47,317 - aiogram.dispatcher - INFO - Polling stopped for bot @ToolsQABot id=7765564183 - 'qa_rob_bot_dev'
+2025-06-22 00:56:47,319 - __main__ - INFO - Event loop закрыт
+2025-06-22 00:57:02,471 - __main__ - INFO - === Инициализация бота ===
+2025-06-22 00:57:02,472 - handlers - INFO - Регистрация обработчиков команд...
+2025-06-22 00:57:02,474 - handlers - INFO - Все обработчики успешно зарегистрированы
+2025-06-22 00:57:02,935 - __main__ - INFO - === Запуск бота ===
+2025-06-22 00:57:02,936 - aiogram.dispatcher - INFO - Start polling
+2025-06-22 00:57:02,939 - __main__ - INFO - HTTP-сервер запущен на порту 8000
+2025-06-22 00:57:03,012 - aiogram.dispatcher - INFO - Run polling for bot @ToolsQABot id=7765564183 - 'qa_rob_bot_dev'
+2025-06-22 00:57:07,537 - aiogram.event - INFO - Update id=977031496 is handled. Duration 312 ms by bot id=7765564183
+2025-06-22 00:57:09,637 - aiogram.event - INFO - Update id=977031497 is handled. Duration 171 ms by bot id=7765564183
+2025-06-22 00:57:12,216 - aiogram.event - INFO - Update id=977031498 is handled. Duration 312 ms by bot id=7765564183
+2025-06-22 00:57:13,356 - aiogram.event - INFO - Update id=977031499 is handled. Duration 155 ms by bot id=7765564183
+2025-06-22 00:57:43,491 - __main__ - INFO - Приложение остановлено пользователем
+2025-06-22 00:57:43,491 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-22 00:57:43,760 - __main__ - INFO - Получен сигнал завершения работы
+2025-06-22 00:57:43,762 - __main__ - INFO - Завершение работы бота...
+2025-06-22 00:57:44,290 - __main__ - INFO - Бот остановлен
+2025-06-22 00:57:44,292 - aiogram.dispatcher - INFO - Polling stopped for bot @ToolsQABot id=7765564183 - 'qa_rob_bot_dev'
+2025-06-22 00:57:44,293 - __main__ - INFO - Event loop закрыт
+2025-06-22 00:57:52,304 - __main__ - INFO - === Инициализация бота ===
+2025-06-22 00:57:52,304 - handlers - INFO - Регистрация обработчиков команд...
+2025-06-22 00:57:52,304 - handlers - INFO - Все обработчики успешно зарегистрированы
+2025-06-22 00:57:52,814 - __main__ - INFO - === Запуск бота ===
+2025-06-22 00:57:52,816 - aiogram.dispatcher - INFO - Start polling
+2025-06-22 00:57:52,822 - __main__ - INFO - HTTP-сервер запущен на порту 8000
+2025-06-22 00:57:52,923 - aiogram.dispatcher - INFO - Run polling for bot @ToolsQABot id=7765564183 - 'qa_rob_bot_dev'
+2025-06-22 00:58:04,106 - aiogram.event - INFO - Update id=977031500 is handled. Duration 264 ms by bot id=7765564183
+2025-06-22 00:58:15,958 - aiogram.event - INFO - Update id=977031501 is handled. Duration 110 ms by bot id=7765564183
+2025-06-22 00:58:27,695 - aiogram.event - INFO - Update id=977031502 is handled. Duration 141 ms by bot id=7765564183
+2025-06-22 00:58:29,051 - aiogram.event - INFO - Update id=977031503 is handled. Duration 233 ms by bot id=7765564183
+2025-06-22 00:58:30,788 - aiogram.event - INFO - Update id=977031504 is handled. Duration 93 ms by bot id=7765564183
+2025-06-22 00:58:32,445 - aiogram.event - INFO - Update id=977031505 is handled. Duration 203 ms by bot id=7765564183
+2025-06-22 00:58:33,444 - aiogram.event - INFO - Update id=977031506 is handled. Duration 125 ms by bot id=7765564183
+2025-06-22 00:59:03,576 - __main__ - INFO - Приложение остановлено пользователем
+2025-06-22 00:59:03,576 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-22 00:59:03,832 - __main__ - INFO - Получен сигнал завершения работы
+2025-06-22 00:59:03,832 - __main__ - INFO - Завершение работы бота...
+2025-06-22 00:59:04,478 - __main__ - INFO - Бот остановлен
+2025-06-22 00:59:04,479 - aiogram.dispatcher - INFO - Polling stopped for bot @ToolsQABot id=7765564183 - 'qa_rob_bot_dev'
+2025-06-22 00:59:04,480 - __main__ - INFO - Event loop закрыт

@@ -20,8 +20,10 @@ from plugins.image_generator import (
 from plugins.payment_generator import (
     generate_payment_command as payment_gen_command,
     process_payment_system,
+    process_regenerate_choice,
     PaymentGeneratorStates
 )
+
 from plugins.pairwise_tester import (
     pairwise_command as pairwise_test_command,
     process_pairwise_parameters,
@@ -36,7 +38,7 @@ class CommandRouter:
             "генератор платежных данных": self.handle_payment_command,
             "генератор pairwise тестов": self.handle_pairwise_command,
             "назад в меню": self.handle_back_to_menu,
-            "/help": self.handle_help_command
+            "информация": self.handle_help_command
         }
 
     async def handle_image_command(self, message: Message, state: FSMContext):
@@ -111,14 +113,20 @@ class CommandRouter:
             @self.dp.message(StateFilter(ImageGeneratorStates.waiting_for_choice))
             async def handle_image_choice(message: Message, state: FSMContext):
                 await handle_choice(message, state)
-
+          
             @self.dp.message(StateFilter(PaymentGeneratorStates.waiting_for_payment_system))
             async def handle_payment_state(message: Message, state: FSMContext):
-                if message.text == "Назад в меню" or message.text == "/help":
-                    handler = self.handle_help_command if message.text == "/help" else self.handle_back_to_menu
-                    await handler(message, state)
+                if message.text == "Назад в меню":
+                    await self.handle_back_to_menu(message, state)
                     return
                 await process_payment_system(message, state)
+
+            @self.dp.message(StateFilter(PaymentGeneratorStates.waiting_for_regenerate_choice))
+            async def handle_regenerate_choice(message: Message, state: FSMContext):
+                if message.text == "Назад в меню":
+                    await self.handle_back_to_menu(message, state)
+                    return
+                await process_regenerate_choice(message, state)
 
             @self.dp.message(StateFilter(PairwiseStates.waiting_for_parameters))
             async def handle_pairwise_state(message: Message, state: FSMContext):

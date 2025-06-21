@@ -1,23 +1,40 @@
 import logging
 import asyncio
 import sys
+import os
+from pathlib import Path
 from aiogram import Bot, Dispatcher
 from aiogram.client.default import DefaultBotProperties
 from aiogram.fsm.storage.memory import MemoryStorage
+from aiogram.types import Message
 from config import Config
 from handlers import CommandRouter
-from aiohttp import web  # <-- Добавлено
+from aiohttp import web
 
+# Создаем папку для логов, если её нет
+LOG_DIR = Path("logs")
+LOG_DIR.mkdir(exist_ok=True)
+
+# Настройка логирования
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler("bot.log"),
+        logging.FileHandler(LOG_DIR / "bot.log"),
         logging.StreamHandler()
     ]
 )
 
 logger = logging.getLogger(__name__)
+
+async def notify_admin(bot: Bot, message: str):
+    """Отправка уведомления администратору"""
+    try:
+        if hasattr(Config, 'ADMIN_ID'):
+            await bot.send_message(Config.ADMIN_ID, message)
+            logger.info(f"Уведомление отправлено администратору: {message}")
+    except Exception as e:
+        logger.error(f"Ошибка при отправке уведомления администратору: {e}")
 
 async def close_bot_session(bot: Bot):
     """Корректное закрытие сессии бота"""
@@ -54,10 +71,13 @@ async def main():
         # Пропуск накопившихся сообщений
         await bot.delete_webhook(drop_pending_updates=True)
 
+        # Уведомление о запуске
+        await notify_admin(bot, "🟢 Бот успешно запущен!")
+
         # Создание и запуск HTTP-сервера
         app = web.Application()
         app.router.add_get('/health', health_check)
-        asyncio.create_task(start_http_server(app))  # <-- Запуск в фоне
+        asyncio.create_task(start_http_server(app))
 
         logger.info("=== Запуск бота ===")
         await dp.start_polling(
@@ -72,10 +92,13 @@ async def main():
         logger.info("Получен сигнал завершения работы")
     except Exception as e:
         logger.critical(f"Фатальная ошибка: {e}", exc_info=True)
+        if bot:
+            await notify_admin(bot, f"🔴 Критическая ошибка бота:\n{str(e)}")
         raise
     finally:
         logger.info("Завершение работы бота...")
         if bot:
+            await notify_admin(bot, "🔴 Бот остановлен")
             await close_bot_session(bot)
         logger.info("Бот остановлен")
 
