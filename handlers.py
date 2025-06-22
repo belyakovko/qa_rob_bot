@@ -9,6 +9,13 @@ logger = logging.getLogger(__name__)
 
 # Импорты команд
 
+from plugins.json_validator import (
+    json_validator_command,
+    process_json_validation,
+    process_repeat_choice,
+    JsonValidatorStates
+)
+
 from plugins.image_generator import (
     generate_image_command,
     process_format_choice,
@@ -37,9 +44,15 @@ class CommandRouter:
             "генератор изображений": self.handle_image_command,
             "генератор платежных данных": self.handle_payment_command,
             "генератор pairwise тестов": self.handle_pairwise_command,
+            "валидатор json": self.handle_json_validator_command,
             "назад в меню": self.handle_back_to_menu,
             "информация": self.handle_help_command
         }
+
+    async def handle_json_validator_command(self, message: Message, state: FSMContext):
+        await state.clear()
+        await state.set_state(JsonValidatorStates.waiting_for_json)
+        await json_validator_command(message, state)
 
     async def handle_image_command(self, message: Message, state: FSMContext):
         await state.clear()
@@ -96,6 +109,10 @@ class CommandRouter:
             @self.dp.message(Command("pairwise"))
             async def cmd_pairwise(message: Message, state: FSMContext):
                 await self.handle_pairwise_command(message, state)
+            
+            @self.dp.message(Command("validatejson"))
+            async def cmd_validatejson(message: Message, state: FSMContext):
+                await self.handle_json_validator_command(message, state)
 
             # Обработчики состояний
             @self.dp.message(StateFilter(ImageGeneratorStates.waiting_for_params))
@@ -135,6 +152,26 @@ class CommandRouter:
                     await handler(message, state)
                     return
                 await process_pairwise_parameters(message, state)
+
+            @self.dp.message(StateFilter(PairwiseStates.waiting_for_action))
+            async def handle_pairwise_action(message: Message, state: FSMContext):
+                from plugins.pairwise_tester import process_pairwise_action
+                await process_pairwise_action(message, state)
+
+            @self.dp.message(StateFilter(JsonValidatorStates.waiting_for_json))
+            async def handle_json_validation(message: Message, state: FSMContext):
+                if message.text == "Назад в меню":
+                    await self.handle_back_to_menu(message, state)
+                    return
+                await process_json_validation(message, state)
+          
+            @self.dp.message(StateFilter(JsonValidatorStates.waiting_for_repeat))
+            async def handle_json_repeat_choice(message: Message, state: FSMContext):
+                if message.text == "Назад в меню":
+                    await self.handle_back_to_menu(message, state)
+                    return
+                await process_repeat_choice(message, state)
+
 
             # Главный обработчик текстовых сообщений
             @self.dp.message()

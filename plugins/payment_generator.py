@@ -3,7 +3,7 @@ from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
 import random
 import logging
-from messages import get_main_menu, MENU_MSG
+from messages import MENU_MSG, get_main_menu, get_back_menu
 
 logger = logging.getLogger(__name__)
 

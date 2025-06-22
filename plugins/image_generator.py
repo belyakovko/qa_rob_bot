@@ -40,8 +40,8 @@ async def generate_image_command(message: Message, state: FSMContext):
 async def process_format_choice(message: Message, state: FSMContext):
     if message.text == "Назад в меню":
         await state.clear()
-        from messages import MENU_MSG, get_main_menu  # Изменено: импортируем MENU_MSG вместо WELCOME_MSG
-        await message.answer(MENU_MSG, reply_markup=get_main_menu())  # Используем MENU_MSG
+        from messages import MENU_MSG, get_main_menu  
+        await message.answer(MENU_MSG, reply_markup=get_main_menu())  
         return
       
     format_map = {
@@ -98,7 +98,7 @@ async def process_image_params(message: Message, state: FSMContext):
         return
     elif message.text == "Назад в меню":
         await state.clear()
-        await message.answer(WELCOME_MSG, reply_markup=get_main_menu())
+        await message.answer(MENU_MSG, reply_markup=get_main_menu())
         return
     
     try:

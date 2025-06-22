@@ -9,7 +9,10 @@ def get_main_menu():
                 KeyboardButton(text="Генератор платежных данных"),
             ],
             [
-                KeyboardButton(text="Генератор pairwise тестов"),
+                KeyboardButton(text="Генератор Pairwise тестов"),
+                KeyboardButton(text="Валидатор JSON")
+            ],
+            [
                 KeyboardButton(text="Информация")
             ]
         ],
@@ -33,7 +36,8 @@ HELP_MSG = (
     "/genimage - генератор изображений\n"
     "/genpayment - генератор платежных данных\n"
     "/pairwise - генератор pairwise тестов\n"
-    "/cancel - отмена текущей операции\n\n"
+    "/validatejson - валидатор JSON\n"
+    "/cancel - отмена текущей операции\n"
     "/help - вызов справки\n\n"
     "Или используйте кнопки меню ниже"
 )

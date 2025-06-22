@@ -382,3 +382,380 @@ AttributeError: 'ReplyKeyboardRemove' object has no attribute 'add'
 2025-06-22 00:59:04,478 - __main__ - INFO - ��� ����������
 2025-06-22 00:59:04,479 - aiogram.dispatcher - INFO - Polling stopped for bot @ToolsQABot id=7765564183 - 'qa_rob_bot_dev'
 2025-06-22 00:59:04,480 - __main__ - INFO - Event loop ������
+2025-06-23 00:43:48,243 - __main__ - INFO - === ������������� ���� ===
+2025-06-23 00:43:48,244 - handlers - INFO - ����������� ������������ ������...
+2025-06-23 00:43:48,248 - handlers - INFO - ��� ����������� ������� ����������������
+2025-06-23 00:43:48,917 - __main__ - INFO - === ������ ���� ===
+2025-06-23 00:43:48,921 - aiogram.dispatcher - INFO - Start polling
+2025-06-23 00:43:48,924 - __main__ - INFO - HTTP-������ ������� �� ����� 8000
+2025-06-23 00:43:48,992 - aiogram.dispatcher - INFO - Run polling for bot @ToolsQABot id=7765564183 - 'qa_rob_bot_dev'
+2025-06-23 00:44:09,801 - aiogram.event - INFO - Update id=977031507 is handled. Duration 297 ms by bot id=7765564183
+2025-06-23 00:44:12,820 - aiogram.event - INFO - Update id=977031508 is handled. Duration 108 ms by bot id=7765564183
+2025-06-23 00:44:35,080 - aiogram.event - INFO - Update id=977031509 is handled. Duration 233 ms by bot id=7765564183
+2025-06-23 00:44:47,673 - aiogram.event - INFO - Update id=977031510 is handled. Duration 108 ms by bot id=7765564183
+2025-06-23 00:44:52,779 - aiogram.event - INFO - Update id=977031511 is handled. Duration 93 ms by bot id=7765564183
+2025-06-23 00:44:59,637 - aiogram.event - INFO - Update id=977031512 is handled. Duration 93 ms by bot id=7765564183
+2025-06-23 00:45:09,461 - aiogram.event - INFO - Update id=977031513 is handled. Duration 93 ms by bot id=7765564183
+2025-06-23 00:45:12,691 - aiogram.event - INFO - Update id=977031514 is handled. Duration 94 ms by bot id=7765564183
+2025-06-23 00:45:17,041 - aiogram.event - INFO - Update id=977031515 is handled. Duration 125 ms by bot id=7765564183
+2025-06-23 00:45:27,612 - aiogram.event - INFO - Update id=977031516 is handled. Duration 218 ms by bot id=7765564183
+2025-06-23 00:45:28,617 - aiogram.event - INFO - Update id=977031517 is handled. Duration 202 ms by bot id=7765564183
+2025-06-23 00:45:34,713 - aiogram.event - INFO - Update id=977031518 is handled. Duration 625 ms by bot id=7765564183
+2025-06-23 00:45:36,542 - aiogram.event - INFO - Update id=977031519 is handled. Duration 94 ms by bot id=7765564183
+2025-06-23 00:48:02,809 - aiogram.event - INFO - Update id=977031520 is handled. Duration 1266 ms by bot id=7765564183
+2025-06-23 00:48:08,091 - aiogram.event - INFO - Update id=977031521 is handled. Duration 141 ms by bot id=7765564183
+2025-06-23 00:50:28,953 - __main__ - INFO - ���������� ����������� �������������
+2025-06-23 00:50:28,954 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-23 00:50:29,199 - __main__ - INFO - ������� ������ ���������� ������
+2025-06-23 00:50:29,200 - __main__ - INFO - ���������� ������ ����...
+2025-06-23 00:50:29,745 - __main__ - INFO - ��� ����������
+2025-06-23 00:50:29,746 - aiogram.dispatcher - INFO - Polling stopped for bot @ToolsQABot id=7765564183 - 'qa_rob_bot_dev'
+2025-06-23 00:50:29,749 - __main__ - INFO - Event loop ������
+2025-06-23 00:53:05,428 - __main__ - INFO - === ������������� ���� ===
+2025-06-23 00:53:05,428 - handlers - INFO - ����������� ������������ ������...
+2025-06-23 00:53:05,431 - handlers - INFO - ��� ����������� ������� ����������������
+2025-06-23 00:53:05,955 - __main__ - INFO - === ������ ���� ===
+2025-06-23 00:53:05,964 - aiogram.dispatcher - INFO - Start polling
+2025-06-23 00:53:05,967 - __main__ - INFO - HTTP-������ ������� �� ����� 8000
+2025-06-23 00:53:06,052 - aiogram.dispatcher - INFO - Run polling for bot @ToolsQABot id=7765564183 - 'qa_rob_bot_dev'
+2025-06-23 00:53:12,460 - aiogram.event - INFO - Update id=977031522 is handled. Duration 233 ms by bot id=7765564183
+2025-06-23 00:53:29,166 - aiogram.event - INFO - Update id=977031523 is handled. Duration 312 ms by bot id=7765564183
+2025-06-23 00:53:33,677 - aiogram.event - INFO - Update id=977031524 is not handled. Duration 0 ms by bot id=7765564183
+2025-06-23 00:53:33,678 - aiogram.event - ERROR - Cause exception while process update id=977031524 by bot id=7765564183
+NameError: name 'process_repeat_choice' is not defined
+Traceback (most recent call last):
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+  File "C:\projects\Python\env\lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\projects\Python\qa_rob_bot\handlers.py", line 167, in handle_json_repeat_choice
+    await process_repeat_choice(message, state)
+NameError: name 'process_repeat_choice' is not defined
+2025-06-23 00:53:40,279 - aiogram.event - INFO - Update id=977031525 is not handled. Duration 0 ms by bot id=7765564183
+2025-06-23 00:53:40,279 - aiogram.event - ERROR - Cause exception while process update id=977031525 by bot id=7765564183
+NameError: name 'process_repeat_choice' is not defined
+Traceback (most recent call last):
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+  File "C:\projects\Python\env\lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\projects\Python\qa_rob_bot\handlers.py", line 167, in handle_json_repeat_choice
+    await process_repeat_choice(message, state)
+NameError: name 'process_repeat_choice' is not defined
+2025-06-23 00:59:33,016 - __main__ - INFO - ���������� ����������� �������������
+2025-06-23 00:59:33,017 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-23 00:59:33,275 - __main__ - INFO - ������� ������ ���������� ������
+2025-06-23 00:59:33,276 - __main__ - INFO - ���������� ������ ����...
+2025-06-23 00:59:33,791 - __main__ - INFO - ��� ����������
+2025-06-23 00:59:33,792 - aiogram.dispatcher - INFO - Polling stopped for bot @ToolsQABot id=7765564183 - 'qa_rob_bot_dev'
+2025-06-23 00:59:33,794 - __main__ - INFO - Event loop ������
+2025-06-23 01:00:02,962 - __main__ - INFO - === Инициализация бота ===
+2025-06-23 01:00:02,963 - handlers - INFO - Регистрация обработчиков команд...
+2025-06-23 01:00:02,965 - handlers - INFO - Все обработчики успешно зарегистрированы
+2025-06-23 01:00:03,304 - __main__ - INFO - Уведомление отправлено администратору
+2025-06-23 01:00:03,305 - __main__ - INFO - === Запуск бота ===
+2025-06-23 01:00:03,306 - aiogram.dispatcher - INFO - Start polling
+2025-06-23 01:00:03,308 - __main__ - INFO - HTTP-сервер запущен на порту 8000
+2025-06-23 01:00:03,382 - aiogram.dispatcher - INFO - Run polling for bot @ToolsQABot id=7765564183 - 'qa_rob_bot_dev'
+2025-06-23 01:00:16,740 - aiogram.event - INFO - Update id=977031526 is handled. Duration 233 ms by bot id=7765564183
+2025-06-23 01:00:18,009 - aiogram.event - INFO - Update id=977031527 is handled. Duration 93 ms by bot id=7765564183
+2025-06-23 01:00:24,457 - aiogram.event - INFO - Update id=977031528 is handled. Duration 250 ms by bot id=7765564183
+2025-06-23 01:00:29,406 - aiogram.event - INFO - Update id=977031529 is handled. Duration 188 ms by bot id=7765564183
+2025-06-23 01:00:32,485 - aiogram.event - INFO - Update id=977031530 is handled. Duration 93 ms by bot id=7765564183
+2025-06-23 01:00:35,835 - aiogram.event - INFO - Update id=977031531 is handled. Duration 186 ms by bot id=7765564183
+2025-06-23 01:00:38,429 - aiogram.event - INFO - Update id=977031532 is handled. Duration 94 ms by bot id=7765564183
+2025-06-23 01:00:43,650 - aiogram.event - INFO - Update id=977031533 is handled. Duration 93 ms by bot id=7765564183
+2025-06-23 01:00:54,360 - plugins.pairwise_tester - ERROR - Pairwise error: 2 validation errors for SendDocument
+document.is-instance[InputFile]
+  Input should be an instance of InputFile [type=is_instance_of, input_value=<_io.BytesIO object at 0x000002D70049D800>, input_type=BytesIO]
+    For further information visit https://errors.pydantic.dev/2.7/v/is_instance_of
+document.str
+  Input should be a valid string [type=string_type, input_value=<_io.BytesIO object at 0x000002D70049D800>, input_type=BytesIO]
+    For further information visit https://errors.pydantic.dev/2.7/v/string_type
+Traceback (most recent call last):
+  File "C:\projects\Python\qa_rob_bot\plugins\pairwise_tester.py", line 119, in process_pairwise_parameters
+    await message.answer_document(
+  File "C:\projects\Python\env\lib\site-packages\aiogram\types\message.py", line 1267, in answer_document
+    return SendDocument(
+  File "C:\projects\Python\env\lib\site-packages\pydantic\main.py", line 176, in __init__
+    self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 2 validation errors for SendDocument
+document.is-instance[InputFile]
+  Input should be an instance of InputFile [type=is_instance_of, input_value=<_io.BytesIO object at 0x000002D70049D800>, input_type=BytesIO]
+    For further information visit https://errors.pydantic.dev/2.7/v/is_instance_of
+document.str
+  Input should be a valid string [type=string_type, input_value=<_io.BytesIO object at 0x000002D70049D800>, input_type=BytesIO]
+    For further information visit https://errors.pydantic.dev/2.7/v/string_type
+2025-06-23 01:00:54,598 - aiogram.event - INFO - Update id=977031534 is handled. Duration 484 ms by bot id=7765564183
+2025-06-23 01:03:15,253 - __main__ - INFO - Приложение остановлено пользователем
+2025-06-23 01:03:15,253 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-23 01:03:15,510 - __main__ - INFO - Получен сигнал завершения работы
+2025-06-23 01:03:15,511 - __main__ - INFO - Завершение работы бота...
+2025-06-23 01:03:15,760 - __main__ - INFO - Уведомление отправлено администратору
+2025-06-23 01:03:16,025 - __main__ - INFO - Бот остановлен
+2025-06-23 01:03:16,026 - aiogram.dispatcher - INFO - Polling stopped for bot @ToolsQABot id=7765564183 - 'qa_rob_bot_dev'
+2025-06-23 01:03:16,027 - __main__ - INFO - Event loop закрыт
+2025-06-23 01:06:37,003 - __main__ - INFO - === Инициализация бота ===
+2025-06-23 01:06:37,004 - handlers - INFO - Регистрация обработчиков команд...
+2025-06-23 01:06:37,006 - handlers - INFO - Все обработчики успешно зарегистрированы
+2025-06-23 01:06:37,394 - __main__ - INFO - Уведомление отправлено администратору
+2025-06-23 01:06:37,395 - __main__ - INFO - === Запуск бота ===
+2025-06-23 01:06:37,396 - aiogram.dispatcher - INFO - Start polling
+2025-06-23 01:06:37,398 - __main__ - INFO - HTTP-сервер запущен на порту 8000
+2025-06-23 01:06:37,469 - aiogram.dispatcher - INFO - Run polling for bot @ToolsQABot id=7765564183 - 'qa_rob_bot_dev'
+2025-06-23 01:06:41,555 - aiogram.event - INFO - Update id=977031535 is handled. Duration 297 ms by bot id=7765564183
+2025-06-23 01:06:43,876 - aiogram.event - INFO - Update id=977031536 is handled. Duration 172 ms by bot id=7765564183
+2025-06-23 01:06:58,272 - aiogram.event - INFO - Update id=977031537 is handled. Duration 250 ms by bot id=7765564183
+2025-06-23 01:10:59,741 - __main__ - INFO - Приложение остановлено пользователем
+2025-06-23 01:10:59,741 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-23 01:10:59,986 - __main__ - INFO - Получен сигнал завершения работы
+2025-06-23 01:10:59,987 - __main__ - INFO - Завершение работы бота...
+2025-06-23 01:11:00,253 - __main__ - INFO - Уведомление отправлено администратору
+2025-06-23 01:11:00,519 - __main__ - INFO - Бот остановлен
+2025-06-23 01:11:00,520 - aiogram.dispatcher - INFO - Polling stopped for bot @ToolsQABot id=7765564183 - 'qa_rob_bot_dev'
+2025-06-23 01:11:00,521 - __main__ - INFO - Event loop закрыт
+2025-06-23 01:12:21,650 - __main__ - INFO - === Инициализация бота ===
+2025-06-23 01:12:21,651 - handlers - INFO - Регистрация обработчиков команд...
+2025-06-23 01:12:21,654 - handlers - INFO - Все обработчики успешно зарегистрированы
+2025-06-23 01:12:22,035 - __main__ - INFO - Уведомление отправлено администратору
+2025-06-23 01:12:22,036 - __main__ - INFO - === Запуск бота ===
+2025-06-23 01:12:22,037 - aiogram.dispatcher - INFO - Start polling
+2025-06-23 01:12:22,039 - __main__ - INFO - HTTP-сервер запущен на порту 8000
+2025-06-23 01:12:22,111 - aiogram.dispatcher - INFO - Run polling for bot @ToolsQABot id=7765564183 - 'qa_rob_bot_dev'
+2025-06-23 01:12:27,878 - aiogram.event - INFO - Update id=977031538 is handled. Duration 265 ms by bot id=7765564183
+2025-06-23 01:12:35,635 - aiogram.event - INFO - Update id=977031539 is handled. Duration 281 ms by bot id=7765564183
+2025-06-23 01:12:43,128 - aiogram.event - INFO - Update id=977031540 is handled. Duration 186 ms by bot id=7765564183
+2025-06-23 01:12:46,573 - aiogram.event - INFO - Update id=977031541 is handled. Duration 295 ms by bot id=7765564183
+2025-06-23 01:12:49,327 - aiogram.event - INFO - Update id=977031542 is handled. Duration 125 ms by bot id=7765564183
+2025-06-23 01:13:07,770 - aiogram.event - INFO - Update id=977031543 is handled. Duration 343 ms by bot id=7765564183
+2025-06-23 01:13:12,265 - aiogram.event - INFO - Update id=977031544 is handled. Duration 202 ms by bot id=7765564183
+2025-06-23 01:16:29,919 - aiogram.event - INFO - Update id=977031545 is handled. Duration 265 ms by bot id=7765564183
+2025-06-23 01:16:39,729 - __main__ - INFO - Приложение остановлено пользователем
+2025-06-23 01:16:39,729 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-23 01:16:39,990 - __main__ - INFO - Получен сигнал завершения работы
+2025-06-23 01:16:39,990 - __main__ - INFO - Завершение работы бота...
+2025-06-23 01:16:40,364 - __main__ - INFO - Уведомление отправлено администратору
+2025-06-23 01:16:40,639 - __main__ - INFO - Бот остановлен
+2025-06-23 01:16:40,640 - aiogram.dispatcher - INFO - Polling stopped for bot @ToolsQABot id=7765564183 - 'qa_rob_bot_dev'
+2025-06-23 01:16:40,641 - __main__ - INFO - Event loop закрыт
+2025-06-23 01:18:10,226 - __main__ - INFO - === Инициализация бота ===
+2025-06-23 01:18:10,226 - handlers - INFO - Регистрация обработчиков команд...
+2025-06-23 01:18:10,228 - handlers - INFO - Все обработчики успешно зарегистрированы
+2025-06-23 01:18:10,608 - __main__ - INFO - Уведомление отправлено администратору
+2025-06-23 01:18:10,609 - __main__ - INFO - === Запуск бота ===
+2025-06-23 01:18:10,610 - aiogram.dispatcher - INFO - Start polling
+2025-06-23 01:18:10,613 - __main__ - INFO - HTTP-сервер запущен на порту 8000
+2025-06-23 01:18:10,689 - aiogram.dispatcher - INFO - Run polling for bot @ToolsQABot id=7765564183 - 'qa_rob_bot_dev'
+2025-06-23 01:18:16,656 - aiogram.event - INFO - Update id=977031546 is handled. Duration 234 ms by bot id=7765564183
+2025-06-23 01:18:35,060 - aiogram.event - INFO - Update id=977031547 is handled. Duration 360 ms by bot id=7765564183
+2025-06-23 01:18:40,101 - aiogram.event - INFO - Update id=977031548 is handled. Duration 218 ms by bot id=7765564183
+2025-06-23 01:18:41,439 - aiogram.event - INFO - Update id=977031549 is handled. Duration 94 ms by bot id=7765564183
+2025-06-23 01:18:43,112 - aiogram.event - INFO - Update id=977031550 is handled. Duration 109 ms by bot id=7765564183
+2025-06-23 01:18:48,115 - aiogram.event - INFO - Update id=977031551 is handled. Duration 125 ms by bot id=7765564183
+2025-06-23 01:18:48,850 - aiogram.event - INFO - Update id=977031552 is handled. Duration 109 ms by bot id=7765564183
+2025-06-23 01:18:50,596 - aiogram.event - INFO - Update id=977031553 is handled. Duration 141 ms by bot id=7765564183
+2025-06-23 01:21:57,776 - __main__ - INFO - Приложение остановлено пользователем
+2025-06-23 01:21:57,776 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-23 01:21:58,039 - __main__ - INFO - Получен сигнал завершения работы
+2025-06-23 01:21:58,040 - __main__ - INFO - Завершение работы бота...
+2025-06-23 01:21:58,312 - __main__ - INFO - Уведомление отправлено администратору
+2025-06-23 01:21:58,553 - __main__ - INFO - Бот остановлен
+2025-06-23 01:21:58,554 - aiogram.dispatcher - INFO - Polling stopped for bot @ToolsQABot id=7765564183 - 'qa_rob_bot_dev'
+2025-06-23 01:21:58,555 - __main__ - INFO - Event loop закрыт
+2025-06-23 01:24:48,826 - __main__ - INFO - === Инициализация бота ===
+2025-06-23 01:24:48,827 - handlers - INFO - Регистрация обработчиков команд...
+2025-06-23 01:24:48,830 - handlers - INFO - Все обработчики успешно зарегистрированы
+2025-06-23 01:24:49,187 - __main__ - INFO - Уведомление отправлено администратору
+2025-06-23 01:24:49,188 - __main__ - INFO - === Запуск бота ===
+2025-06-23 01:24:49,189 - aiogram.dispatcher - INFO - Start polling
+2025-06-23 01:24:49,191 - __main__ - INFO - HTTP-сервер запущен на порту 8000
+2025-06-23 01:24:49,269 - aiogram.dispatcher - INFO - Run polling for bot @ToolsQABot id=7765564183 - 'qa_rob_bot_dev'
+2025-06-23 01:24:52,990 - aiogram.event - INFO - Update id=977031554 is handled. Duration 233 ms by bot id=7765564183
+2025-06-23 01:24:54,731 - aiogram.event - INFO - Update id=977031555 is handled. Duration 125 ms by bot id=7765564183
+2025-06-23 01:24:55,971 - aiogram.event - INFO - Update id=977031556 is handled. Duration 218 ms by bot id=7765564183
+2025-06-23 01:24:56,671 - aiogram.event - INFO - Update id=977031557 is handled. Duration 94 ms by bot id=7765564183
+2025-06-23 01:24:58,900 - aiogram.event - INFO - Update id=977031558 is handled. Duration 93 ms by bot id=7765564183
+2025-06-23 01:25:04,893 - aiogram.event - INFO - Update id=977031559 is handled. Duration 108 ms by bot id=7765564183
+2025-06-23 01:25:08,890 - aiogram.event - INFO - Update id=977031560 is handled. Duration 188 ms by bot id=7765564183
+2025-06-23 01:25:12,427 - aiogram.event - INFO - Update id=977031561 is handled. Duration 94 ms by bot id=7765564183
+2025-06-23 01:28:18,771 - __main__ - INFO - Приложение остановлено пользователем
+2025-06-23 01:28:18,772 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-23 01:28:19,035 - __main__ - INFO - Получен сигнал завершения работы
+2025-06-23 01:28:19,037 - __main__ - INFO - Завершение работы бота...
+2025-06-23 01:28:19,290 - __main__ - INFO - Уведомление отправлено администратору
+2025-06-23 01:28:19,553 - __main__ - INFO - Бот остановлен
+2025-06-23 01:28:19,553 - aiogram.dispatcher - INFO - Polling stopped for bot @ToolsQABot id=7765564183 - 'qa_rob_bot_dev'
+2025-06-23 01:28:19,555 - __main__ - INFO - Event loop закрыт
+2025-06-23 01:31:54,489 - __main__ - INFO - === Инициализация бота ===
+2025-06-23 01:31:54,489 - handlers - INFO - Регистрация обработчиков команд...
+2025-06-23 01:31:54,491 - handlers - INFO - Все обработчики успешно зарегистрированы
+2025-06-23 01:31:54,890 - __main__ - INFO - Уведомление отправлено администратору
+2025-06-23 01:31:54,891 - __main__ - INFO - === Запуск бота ===
+2025-06-23 01:31:54,892 - aiogram.dispatcher - INFO - Start polling
+2025-06-23 01:31:54,894 - __main__ - INFO - HTTP-сервер запущен на порту 8000
+2025-06-23 01:31:54,971 - aiogram.dispatcher - INFO - Run polling for bot @ToolsQABot id=7765564183 - 'qa_rob_bot_dev'
+2025-06-23 01:32:00,742 - aiogram.event - INFO - Update id=977031562 is handled. Duration 233 ms by bot id=7765564183
+2025-06-23 01:32:02,259 - aiogram.event - INFO - Update id=977031563 is handled. Duration 93 ms by bot id=7765564183
+2025-06-23 01:32:03,346 - aiogram.event - INFO - Update id=977031564 is handled. Duration 125 ms by bot id=7765564183
+2025-06-23 01:32:10,330 - aiogram.event - INFO - Update id=977031565 is handled. Duration 202 ms by bot id=7765564183
+2025-06-23 01:32:12,729 - aiogram.event - INFO - Update id=977031566 is not handled. Duration 0 ms by bot id=7765564183
+2025-06-23 01:32:12,729 - aiogram.event - ERROR - Cause exception while process update id=977031566 by bot id=7765564183
+NameError: name 'MENU_MSG' is not defined
+Traceback (most recent call last):
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+  File "C:\projects\Python\env\lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "c:\projects\Python\qa_rob_bot\handlers.py", line 159, in handle_pairwise_action
+    await process_pairwise_action(message, state)
+  File "c:\projects\Python\qa_rob_bot\plugins\pairwise_tester.py", line 115, in process_pairwise_action
+    await message.answer(MENU_MSG, reply_markup=get_main_menu())
+NameError: name 'MENU_MSG' is not defined
+2025-06-23 01:32:18,050 - aiogram.event - INFO - Update id=977031567 is handled. Duration 78 ms by bot id=7765564183
+2025-06-23 01:32:23,213 - aiogram.event - INFO - Update id=977031568 is handled. Duration 266 ms by bot id=7765564183
+2025-06-23 01:32:27,861 - aiogram.event - INFO - Update id=977031569 is handled. Duration 187 ms by bot id=7765564183
+2025-06-23 01:32:30,828 - aiogram.event - INFO - Update id=977031570 is handled. Duration 108 ms by bot id=7765564183
+2025-06-23 01:32:36,554 - aiogram.event - INFO - Update id=977031571 is handled. Duration 344 ms by bot id=7765564183
+2025-06-23 01:32:37,878 - aiogram.event - INFO - Update id=977031572 is not handled. Duration 0 ms by bot id=7765564183
+2025-06-23 01:32:37,879 - aiogram.event - ERROR - Cause exception while process update id=977031572 by bot id=7765564183
+NameError: name 'MENU_MSG' is not defined
+Traceback (most recent call last):
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+  File "C:\projects\Python\env\lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\projects\Python\env\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "c:\projects\Python\qa_rob_bot\handlers.py", line 159, in handle_pairwise_action
+    await process_pairwise_action(message, state)
+  File "c:\projects\Python\qa_rob_bot\plugins\pairwise_tester.py", line 115, in process_pairwise_action
+    await message.answer(MENU_MSG, reply_markup=get_main_menu())
+NameError: name 'MENU_MSG' is not defined
+2025-06-23 01:33:05,930 - aiogram.event - INFO - Update id=977031573 is handled. Duration 250 ms by bot id=7765564183
+2025-06-23 01:33:12,382 - aiogram.event - INFO - Update id=977031574 is handled. Duration 108 ms by bot id=7765564183
+2025-06-23 01:33:15,388 - aiogram.event - INFO - Update id=977031575 is handled. Duration 172 ms by bot id=7765564183
+2025-06-23 01:33:16,667 - aiogram.event - INFO - Update id=977031576 is handled. Duration 156 ms by bot id=7765564183
+2025-06-23 01:33:22,615 - aiogram.event - INFO - Update id=977031577 is handled. Duration 233 ms by bot id=7765564183
+2025-06-23 01:33:24,722 - aiogram.event - INFO - Update id=977031578 is handled. Duration 77 ms by bot id=7765564183
+2025-06-23 01:35:35,540 - __main__ - INFO - Приложение остановлено пользователем
+2025-06-23 01:35:35,541 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-23 01:35:35,791 - __main__ - INFO - Получен сигнал завершения работы
+2025-06-23 01:35:35,791 - __main__ - INFO - Завершение работы бота...
+2025-06-23 01:35:36,020 - __main__ - INFO - Уведомление отправлено администратору
+2025-06-23 01:35:36,276 - __main__ - INFO - Бот остановлен
+2025-06-23 01:35:36,277 - aiogram.dispatcher - INFO - Polling stopped for bot @ToolsQABot id=7765564183 - 'qa_rob_bot_dev'
+2025-06-23 01:35:36,279 - __main__ - INFO - Event loop закрыт
+2025-06-23 01:39:15,620 - __main__ - INFO - === Инициализация бота ===
+2025-06-23 01:39:15,621 - handlers - INFO - Регистрация обработчиков команд...
+2025-06-23 01:39:15,623 - handlers - INFO - Все обработчики успешно зарегистрированы
+2025-06-23 01:39:16,176 - __main__ - INFO - Уведомление отправлено администратору
+2025-06-23 01:39:16,178 - __main__ - INFO - === Запуск бота ===
+2025-06-23 01:39:16,179 - aiogram.dispatcher - INFO - Start polling
+2025-06-23 01:39:16,182 - __main__ - INFO - HTTP-сервер запущен на порту 8000
+2025-06-23 01:39:16,259 - aiogram.dispatcher - INFO - Run polling for bot @ToolsQABot id=7765564183 - 'qa_rob_bot_dev'
+2025-06-23 01:39:24,839 - aiogram.event - INFO - Update id=977031579 is handled. Duration 233 ms by bot id=7765564183
+2025-06-23 01:39:30,355 - aiogram.event - INFO - Update id=977031580 is handled. Duration 187 ms by bot id=7765564183
+2025-06-23 01:39:32,866 - aiogram.event - INFO - Update id=977031581 is handled. Duration 125 ms by bot id=7765564183
+2025-06-23 01:39:34,780 - aiogram.event - INFO - Update id=977031582 is handled. Duration 93 ms by bot id=7765564183
+2025-06-23 01:39:39,133 - aiogram.event - INFO - Update id=977031583 is handled. Duration 250 ms by bot id=7765564183
+2025-06-23 01:39:40,647 - aiogram.event - INFO - Update id=977031584 is handled. Duration 109 ms by bot id=7765564183
+2025-06-23 01:39:43,020 - aiogram.event - INFO - Update id=977031585 is handled. Duration 313 ms by bot id=7765564183
+2025-06-23 01:39:47,203 - aiogram.event - INFO - Update id=977031586 is handled. Duration 375 ms by bot id=7765564183
+2025-06-23 01:39:53,821 - aiogram.event - INFO - Update id=977031587 is handled. Duration 186 ms by bot id=7765564183
+2025-06-23 01:39:55,813 - aiogram.event - INFO - Update id=977031588 is handled. Duration 203 ms by bot id=7765564183
+2025-06-23 01:39:57,513 - aiogram.event - INFO - Update id=977031589 is handled. Duration 93 ms by bot id=7765564183
+2025-06-23 01:39:59,269 - aiogram.event - INFO - Update id=977031590 is handled. Duration 109 ms by bot id=7765564183
+2025-06-23 01:40:49,535 - __main__ - INFO - Приложение остановлено пользователем
+2025-06-23 01:40:49,536 - aiogram.dispatcher - INFO - Polling stopped
+2025-06-23 01:40:49,806 - __main__ - INFO - Получен сигнал завершения работы
+2025-06-23 01:40:49,807 - __main__ - INFO - Завершение работы бота...
+2025-06-23 01:40:50,045 - __main__ - INFO - Уведомление отправлено администратору
+2025-06-23 01:40:50,305 - __main__ - INFO - Бот остановлен
+2025-06-23 01:40:50,307 - aiogram.dispatcher - INFO - Polling stopped for bot @ToolsQABot id=7765564183 - 'qa_rob_bot_dev'
+2025-06-23 01:40:50,308 - __main__ - INFO - Event loop закрыт

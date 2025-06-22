@@ -20,7 +20,7 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler(LOG_DIR / "bot.log"),
+        logging.FileHandler(LOG_DIR / "bot.log", encoding='utf-8'),
         logging.StreamHandler()
     ]
 )
@@ -32,7 +32,7 @@ async def notify_admin(bot: Bot, message: str):
     try:
         if hasattr(Config, 'ADMIN_ID'):
             await bot.send_message(Config.ADMIN_ID, message)
-            logger.info(f"Уведомление отправлено администратору: {message}")
+            logger.info("Уведомление отправлено администратору")
     except Exception as e:
         logger.error(f"Ошибка при отправке уведомления администратору: {e}")
 
