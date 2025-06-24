@@ -135,5 +135,6 @@ qa_rob_bot/
 Телега [@KirBelyakov](https://t.me/KirBelyakov)
 
 ## Благодарности
-* За вдохновение спасибо [Герману Дольникову](https://github.com/German-D) ([QA Studio](https://qa.studio/)) 
-* За реализацию спасибо [Синий Кит](https://chat.deepseek.com/)
+* За вдохновение и навыки спасибо [Герману Дольникову](https://github.com/German-D) ([QA Studio](https://qa.studio/))
+* За мотивацию и наставления спасибо [Олегу Попову]( https://github.com/radiantbald) 
+* За реализацию спасибо [Синему Киту](https://chat.deepseek.com/)
